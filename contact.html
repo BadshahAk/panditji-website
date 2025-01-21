@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>पंडित आनंद आचार्य | संपर्क करें</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, skyblue, red);
+      animation: gradient 6s ease infinite;
+      color: #fff;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .container h1, .container h2 {
+      margin-bottom: 20px;
+    }
+    .contact-details {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .contact-details p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .contact-details a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-form {
+      margin-top: 30px;
+    }
+    .contact-form label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form input[type="submit"] {
+      background: gold;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-form input[type="submit"]:hover {
+      background: #ffcc00;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: #000;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: gold;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo_circular.png" alt="पंडित आनंद आचार्य का लोगो">
+    <h1>संपर्क करें</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">मुख्य पृष्ठ</a></li>
+        <li><a href="about.html">हमारे बारे में</a></li>
+        <li><a href="services.html">सेवाएँ</a></li>
+        <li><a href="booking.html">अभी बुक करें</a></li>
+        <li><a href="aartis/index.html">सभी आरतियाँ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>हमसे संपर्क करें</h2>
+    <div class="contact-details">
+      <p><strong>मोबाइल नंबर:</strong> <a href="tel:+917014254811">+91 7014254811</a></p>
+      <p><strong>व्हाट्सएप:</strong> <a href="https://wa.me/917014254811" target="_blank">+91 7014254811</a></p>
+      <p><strong>टेलीग्राम:</strong> <a href="https://t.me/KINGxANAND" target="_blank">@KINGxANAND</a></p>
+    </div>
+    <div class="contact-form">
+      <h3>संदेश भेजें</h3>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">आपका नाम:</label>
+        <input type="text" id="name" name="name" placeholder="अपना नाम दर्ज करें" required>
+        
+        <label for="email">ईमेल:</label>
+        <input type="email" id="email" name="email" placeholder="अपना ईमेल दर्ज करें" required>
+        
+        <label for="message">आपका संदेश:</label>
+        <textarea id="message" name="message" rows="5" placeholder="अपना संदेश लिखें" required></textarea>
+        
+        <input type="submit" value="संदेश भेजें">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 पंडित आनंद आचार्य। सर्वाधिकार सुरक्षित।</p>
+  </footer>
+</body>
+</html>
