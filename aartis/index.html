@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सभी आरतियाँ</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, skyblue, red);
+      animation: gradient 6s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header nav {
+      margin-top: 10px;
+    }
+    header nav .button {
+      text-decoration: none;
+      color: #fff;
+      background: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+    header nav .button:hover {
+      background: gold;
+      transform: scale(1.1);
+    }
+    main {
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .aarti-list {
+      list-style: none;
+      padding: 0;
+    }
+    .aarti-list li {
+      margin: 10px 0;
+    }
+    .aarti-list .button {
+      text-decoration: none;
+      color: #fff;
+      background: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .aarti-list .button:hover {
+      background: gold;
+      transform: scale(1.1);
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      margin-top: 20px;
+    }
+    footer p {
+      margin: 0;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>सभी आरतियाँ</h1>
+      <nav>
+        <a href="../index.html" class="button">मुख्य पृष्ठ</a>
+        <a href="../services.html" class="button">सेवाएँ</a>
+        <a href="../contact.html" class="button">संपर्क करें</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>आरतियों की सूची</h2>
+      <ul class="aarti-list">
+        <li><a href="ganesh-aarti.html" class="button">गणेश आरती</a></li>
+        <li><a href="shiv-aarti.html" class="button">शिव आरती</a></li>
+        <li><a href="hanuman-aarti.html" class="button">हनुमान आरती</a></li>
+        <li><a href="lakshmi-aarti.html" class="button">लक्ष्मी आरती</a></li>
+        <li><a href="durga-aarti.html" class="button">दुर्गा आरती</a></li>
+        <li><a href="krishna-aarti.html" class="button">कृष्ण आरती</a></li>
+        <!-- Add more Aartis as needed -->
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 पंडित आनंद आचार्य। सर्वाधिकार सुरक्षित।</p>
+    </div>
+  </footer>
+</body>
+</html>
